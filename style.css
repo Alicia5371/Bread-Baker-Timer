@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap");
+
+body {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(224, 174, 114);
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between elements */
+  margin: 20px o; /* vertical spacing */
+}
+
+.controls {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.background {
+  background-color: #b56c1dff;
+  border: 5px solid black;
+  height: 75vh;
+  width: 75vh;
+  border-radius: 10px;
+}
+
+.frontCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 197, 126);
+  border: 5px solid black;
+  height: 70vh;
+  width: 70vh;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.btn {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  width: 300px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#breadImage {
+  margin-bottom: 100px;
+  height: 25vh;
+  width: 35vh;
+}
+
+#time {
+  font-size: 5rem;
+  min-width: 120px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .frontCard {
+    width: 90vh;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .timer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #time {
+    font-size: 3rem;
+  }
+
+  .controls {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button.btn {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+}
