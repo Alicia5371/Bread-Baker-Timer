@@ -1,3 +1,5 @@
+let timeRunning = false;
+
 const timeDisplay = document.getElementById("time");
 const breadImage = document.getElementById("breadImage");
 const startButton = document.querySelector(".btn");
@@ -10,6 +12,9 @@ startButton.addEventListener("click", startCountdown);
 let timeLeft = 1500; //* 25 minutes in seconds //* Global, so everyone can see and change it
 
 function startCountdown() {
+  if (timeRunning) return;
+
+  timeRunning = true;
   breadImage.src = "assets/Bread_Cooking.gif"; //* Swaps to the gif
 
   const countdown = setInterval(() => {
@@ -25,6 +30,7 @@ function startCountdown() {
 
     if (timeLeft < 0) {
       clearInterval(countdown);
+      timeRunning = false;
     }
   }, 1000);
 }
@@ -37,6 +43,7 @@ function updateTimeDisplay() {
 }
 
 plusButton.addEventListener("click", () => {
+  if (timeRunning) return;
   if (timeLeft < 7200) {
     timeLeft += 300; //* Intervals of 5 (Change here )
     updateTimeDisplay();
@@ -44,6 +51,7 @@ plusButton.addEventListener("click", () => {
 });
 
 minusButton.addEventListener("click", () => {
+  if (timeRunning) return;
   if (timeLeft >= 60) {
     timeLeft -= 300; //* Intervals of 5 (Change here )
     updateTimeDisplay();
