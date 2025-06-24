@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap");
 
 body {
   font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   background-color: rgb(224, 174, 114);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -17,6 +22,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .container {
@@ -31,8 +37,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* space between elements */
-  margin: 20px o; /* vertical spacing */
+  gap: 1rem; /* space between elements */
+  margin: 1rem; /* vertical spacing */
 }
 
 .controls {
@@ -44,9 +50,11 @@ h1 {
 .background {
   background-color: #b56c1dff;
   border: 5px solid black;
-  height: 75vh;
-  width: 75vh;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
   border-radius: 10px;
+  padding: 1rem;
 }
 
 .frontCard {
@@ -56,10 +64,7 @@ h1 {
   align-items: center;
   background-color: rgb(241, 197, 126);
   border: 5px solid black;
-  height: 70vh;
-  width: 70vh;
-  margin: auto;
-  margin-top: 25px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -67,9 +72,10 @@ h1 {
   font-family: "Tiny5", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
-  width: 300px;
-  margin-bottom: 40px;
+  font-size: 1.2rem;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 2rem;
   border-radius: 20px;
   border: 5px solid black;
 }
@@ -80,39 +86,38 @@ button:hover {
 }
 
 #breadImage {
-  margin-bottom: 100px;
-  height: 25vh;
-  width: 35vh;
+  margin-bottom: 2rem;
+  height: auto;
+  width: 80%;
+  max-width: 250px;
 }
 
 #time {
-  font-size: 5rem;
-  min-width: 120px;
+  padding: 2px;
+  font-size: 4rem;
+  min-width: 100px;
   text-align: center;
 }
-@media (max-width: 576px) {
-  .frontCard {
-    width: 90vh;
-    height: auto;
-    padding: 1rem;
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
 
-  .timer {
-    flex-direction: column;
-    gap: 10px;
+  h2 {
+    font-size: 1.2rem;
   }
 
   #time {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .controls {
-    width: 40px;
-    height: 40px;
+    height: 30px;
+    width: 30px;
   }
 
-  .button.btn {
-    width: 80%;
-    font-size: 1.5rem;
+  .btn {
+    font-size: 1rem;
   }
 }
