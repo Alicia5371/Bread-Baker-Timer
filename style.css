@@ -148,9 +148,8 @@ button:hover {
     width: 28px;
   }
 
-  .background,
-  .frontCard {
-    width: 95%;
+  .background {
+    width: 100%;
     padding: 1rem;
   }
 
