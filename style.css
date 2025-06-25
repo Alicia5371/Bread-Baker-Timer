@@ -17,7 +17,8 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-h2 {
+.header h2 {
+  color: black;
   font-size: 2rem;
   text-align: center;
   margin: 0.5rem 0;
@@ -91,6 +92,10 @@ button:hover {
   cursor: pointer;
 }
 
+.btn h2 {
+  color: black;
+}
+
 #breadImage {
   margin-bottom: 2rem;
   height: auto;
@@ -140,7 +145,7 @@ button:hover {
   }
 
   #time {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .controls {
@@ -162,5 +167,11 @@ button:hover {
     width: 100%;
     max-width: 220px;
     height: auto;
+  }
+
+  #minus,
+  #plus {
+    width: 40px;
+    height: 40px;
   }
 }
